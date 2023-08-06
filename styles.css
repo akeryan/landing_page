@@ -1,13 +1,22 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
 .header, .footer {
     background-color: #1F2937;
     color: #E5E7EB;
     display: flex;
+    justify-content: center;
 }
 
-.header {
+.header .container {
+    display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0px 30px;
+    max-width: 1000px;
+    height: 60px;
+    flex: 1;
 }
 
 .footer {
@@ -33,4 +42,19 @@
 a {
     text-decoration: none;
   }
+
+.hero {
+    display: flex;
+    justify-content: center;
+}
+
+.hero .container {
+    max-width: 500px;
+}
+
+.hero .img-container {
+    background-color: pink;
+    height: 250px;
+    width: 500px;
+}
 
