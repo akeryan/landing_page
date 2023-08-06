@@ -1,6 +1,7 @@
 * {
     padding: 0px;
     margin: 0px;
+    font-family: 'Roboto', sans-serif;
 }
 
 .header, .footer, .hero {
@@ -91,3 +92,28 @@ a {
     border-radius: 8px;
 }
 
+.quote {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #E5E7EB;
+}
+
+.quote .container {
+    max-width: 800px;
+    padding: 120px 0px;
+}
+
+.quote .text {
+    color: #1F2937;
+    font-size: 36px;
+    font-style: italic;
+    font-weight: 100;
+}
+
+.quote .author {
+    text-align: right;
+    font-weight: bold;
+    font-size: 22px;
+    padding-right: 30px;
+}
