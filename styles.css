@@ -15,6 +15,7 @@
 
 a {
     text-decoration: none;
+    color: var(--lightgrey);
  }
 
  p, button, li {
@@ -54,6 +55,7 @@ a {
     align-items: center;
     max-width: 1000px;
     height: 60px;
+    gap: 20px;
     flex: 1;
 }
 
@@ -61,6 +63,7 @@ a {
     color: var(--offwhite);
     font-size: 24px;
     font-weight: bold;
+    flex-shrink: 0;
 }
 
 .header .nav {
@@ -85,6 +88,7 @@ a {
     height: 400px;
     flex: 1;
     gap: 30px;
+    margin: 0px 20px;
 }
 
 .hero .content-container {
@@ -93,14 +97,16 @@ a {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    flex: 1;
     align-items: flex-start;
+    flex: 1;    
 }
 
 .hero .img-container {
     background-color: lightgray;
     height: 220px;
-    width: 500px;
+    max-width: 500px;
+    width: 200px;
+    flex: 1;
 }
 
 .hero h1 {
@@ -119,19 +125,20 @@ a {
 
 /* || BLOCKS SECTION ===============================================*/
 
-.cards {
+.blocks .cards {
     display: flex;
     justify-content: center;
     gap: 50px;
     flex-wrap: wrap;
 }
 
-.card {
+.blocks .card {
     width: 150px;
     height: 200px;
+    margin-top: 30px;
 }
 
-.card .img {
+.blocks .img {
     width: 150px;
     height: 150px;
     background-color: white;
@@ -152,6 +159,7 @@ a {
 .blocks .title {
     font-size: 36px;
     font-weight: bold;
+    margin-bottom: -30px;
 }
 
 .card .subtext {
@@ -171,7 +179,7 @@ a {
 
 .quote .container {
     max-width: 800px;
-    padding: 120px 0px;
+    padding: 120px 20px;
 }
 
 .quote .text {
@@ -205,10 +213,14 @@ a {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+    padding: 0px 20px;
+    margin: 0px 20px;
+    gap: 10px;
 }
 
 .call-to-action .btn {
     border: 2px solid var(--lightgrey);
+    flex-shrink: 0;
 }
 
 .call-to-action .title {
